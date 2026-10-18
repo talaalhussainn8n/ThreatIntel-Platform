@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.db
+TestResults/
+node_modules/
+dist/
+__pycache__/
+.pytest_cache/
+.venv/
+.env

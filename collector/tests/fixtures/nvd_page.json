@@ -1,0 +1,57 @@
+{
+  "resultsPerPage": 3,
+  "startIndex": 0,
+  "totalResults": 3,
+  "format": "NVD_CVE",
+  "version": "2.0",
+  "vulnerabilities": [
+    {
+      "cve": {
+        "id": "CVE-2026-11111",
+        "published": "2026-10-01T10:15:00.000",
+        "vulnStatus": "Analyzed",
+        "descriptions": [
+          { "lang": "es", "value": "Descripción en español." },
+          { "lang": "en", "value": "A remote attacker can execute arbitrary code in Example VPN Gateway before 7.2 via a crafted HTTP request." }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            { "source": "other@example.com", "type": "Secondary", "cvssData": { "baseScore": 8.1, "baseSeverity": "HIGH" } },
+            { "source": "nvd@nist.gov", "type": "Primary", "cvssData": { "baseScore": 9.8, "baseSeverity": "CRITICAL" } }
+          ]
+        },
+        "configurations": [
+          {
+            "nodes": [
+              {
+                "cpeMatch": [
+                  { "vulnerable": true, "criteria": "cpe:2.3:a:example:vpn_gateway:*:*:*:*:*:*:*:*" },
+                  { "vulnerable": false, "criteria": "cpe:2.3:o:linux:linux_kernel:-:*:*:*:*:*:*:*" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2026-22222",
+        "published": "2026-10-02T08:00:00.000",
+        "vulnStatus": "Awaiting Analysis",
+        "descriptions": [ { "lang": "en", "value": "SQL injection in the search function of Acme Shop." } ],
+        "metrics": {
+          "cvssMetricV2": [ { "type": "Primary", "baseSeverity": "MEDIUM", "cvssData": { "baseScore": 5.0 } } ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2026-33333",
+        "published": "2026-10-02T09:00:00.000",
+        "vulnStatus": "Rejected",
+        "descriptions": [ { "lang": "en", "value": "** REJECT ** This candidate was withdrawn." } ]
+      }
+    }
+  ]
+}
