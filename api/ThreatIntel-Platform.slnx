@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ThreatIntel.Api/ThreatIntel.Api.csproj" />
+  <Project Path="ThreatIntel.Tests/ThreatIntel.Tests.csproj" />
+</Solution>
