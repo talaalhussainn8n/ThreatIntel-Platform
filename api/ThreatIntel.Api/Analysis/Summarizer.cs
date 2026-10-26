@@ -1,22 +1,8 @@
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
 using System.Text.Json.Serialization;
 using ThreatIntel.Api.Data;
 
 namespace ThreatIntel.Api.Analysis;
-
-public sealed class LlmOptions
-{
-    /// <summary>OpenAI-kompatibler Endpunkt, z. B. https://api.openai.com/v1 oder Ollama http://localhost:11434/v1.</summary>
-    public string? BaseUrl { get; set; }
-    public string? ApiKey { get; set; }
-    public string Model { get; set; } = "gpt-4o-mini";
-}
-
-public interface ISummarizer
-{
-    Task<string> SummarizeAsync(Severity severity, IReadOnlyList<string> products, string description, CancellationToken ct);
-}
 
 /// <summary>
 /// Erstellt eine deutsche Kurzfassung für die Lageübersicht. Ohne konfiguriertes Sprachmodell
