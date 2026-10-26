@@ -3,8 +3,14 @@ name: ThreatIntel_Web_CI.yml
 on: 
   push:
     branches: [ main ]
+    paths:
+      - 'web/**'
+      - '.github/workflows/ThreatIntel_Web_CI.yml'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'web/**'
+      - '.github/workflows/ThreatIntel_Web_CI.yml'
 
 jobs:
   web:
