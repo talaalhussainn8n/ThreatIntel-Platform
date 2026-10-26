@@ -1,6 +1,7 @@
 using ThreatIntel.Api.Analysis;
 using ThreatIntel.Api.Contracts;
 using ThreatIntel.Api.Data;
+using Xunit;
 
 namespace ThreatIntel.Tests;
 
