@@ -7,6 +7,16 @@ on:
     branches: [ main ]
 
 jobs:
+  api-restore:
+    name: API-Restore (.NET)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - run: dotnet restore api/ThreatIntel.Api/ThreatIntel.Api.csproj -c Release
+  
   api-build:
     name: API-Build (.NET)
     runs-on: ubuntu-latest
@@ -15,7 +25,7 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
-      - run: dotnet build api/ThreatIntel.csproj -c Release
+      - run: dotnet build api/ThreatIntel.Api/ThreatIntel.Api.csproj -c Release
 
   api-test:
     name: API-Test (.NET)
