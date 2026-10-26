@@ -1,4 +1,4 @@
-name: ThreatIntel_Api_CI.yml
+name: ThreatIntel_Web_CI.yml
 
 on: 
   push:
