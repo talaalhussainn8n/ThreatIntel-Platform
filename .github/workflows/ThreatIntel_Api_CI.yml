@@ -18,6 +18,9 @@ jobs:
   api-build:
     name: API-Build (.NET)
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api/ThreatIntel.Api
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
@@ -28,6 +31,9 @@ jobs:
   api-test:
     name: API-Test (.NET)
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api/ThreatIntel.Tests
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-dotnet@v4
