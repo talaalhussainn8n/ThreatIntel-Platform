@@ -13,6 +13,7 @@ const error = ref('')
 const loading = ref(false)
 const filters = reactive({ search: '', severity: '', product: '', watchlistOnly: false, page: 1 })
 
+
 async function load() {
   loading.value = true
   error.value = ''
