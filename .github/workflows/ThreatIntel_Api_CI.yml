@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
-      - run: dotnet build api/ThreatIntel.Api/ThreatIntel.Api.csproj -c Release
+      - run: dotnet build ThreatIntel.Api.csproj -c Release
 
   api-test:
     name: API-Test (.NET)
@@ -39,7 +39,7 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
-      - run: dotnet test api/ThreatIntel.Tests/ThreatIntel.Tests.csproj -c Release 
+      - run: dotnet test ThreatIntel.Tests.csproj -c Release
 
   collector:
     name: Sammler (Python)
