@@ -185,3 +185,4 @@ static VulnerabilityDto ToDto(Vulnerability v, IReadOnlyList<string> watchlist) 
 // Für Integrationstests mit WebApplicationFactory.
 public partial class Program;
 
+
